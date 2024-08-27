@@ -1,0 +1,69 @@
+/* changement de l'image de fond de ma page de connexion WordPres */
+body.login { 
+    background-image:url('loginBackground.jpg'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover;
+   }
+body #login h1{
+    background-color:rgba(255,255,255,0.8);
+    border-radius:50px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+   body .login div #login {
+    width:60%;
+    background-color:#545454;
+    border:none;
+    padding:0px;
+    margin: top 250px;
+   }
+   .login form {
+    background-color:rgba(0, 0, 0, 0);
+    border:none;
+   }
+   #backtoblog,#nav{
+    margin:0px;
+    text-align:center;
+    background-color:rgba(255,255,255,0.5);
+    font-size: 1.3em;
+    color:black;
+    font-weight: bold;
+
+   }
+   .login #backtoblog a:hover,.login #nav a:hover{
+   font-weight: bold;
+   color:#ff3300;
+
+   }
+   .login form p label,.user-pass-wrap label, #wp-submit{
+    color:white;
+    font-weight: bold;
+   }
+   .login h1 a { 
+    background-image: url('logoCorak.svg'); 
+    background-size:contain;
+    background-position:center;
+    width:100%; 
+    margin-left:5px;
+    margin-right:5px;
+  }
+   #wp-submit {
+    background-color:black;
+    border-radius: 12px;
+    border:none;
+    display:block;
+    width:100%;
+    margin-top:15px;
+font-size:1.2em;   }
+
+   .privacy-policy-link a{
+    color:#ff3000;
+   }
+
+   #wp-submit{
+    margin:auto;
+   }
+   

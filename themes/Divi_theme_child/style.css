@@ -1,0 +1,247 @@
+/*
+Theme Name: Corak_Thème
+Description: Thème enfant de Divi
+Author: Corak DIW Team
+Author URI: https://www.corak.fr
+Template: Divi
+Version: 1.2
+*/
+
+.left-area {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.post-meta {
+    display: none;
+}
+
+
+/* CSS refermer les sous-menus sur mobile */
+
+#main-header .et_mobile_menu .menu-item-has-children>a {
+    background-color: transparent;
+    position: relative;
+}
+
+#main-header .et_mobile_menu .menu-item-has-children>a:after {
+    font-family: 'ETmodules';
+    text-align: center;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+}
+
+#main-header .et_mobile_menu .menu-item-has-children>a:after {
+    font-size: 16px;
+    content: '\4c';
+    top: 13px;
+    right: 10px;
+}
+
+#main-header .et_mobile_menu .menu-item-has-children.visible>a:after {
+    content: '\4d';
+}
+
+#main-header .et_mobile_menu ul.sub-menu {
+    display: none !important;
+    visibility: hidden !important;
+    transition: all 1.5s ease-in-out;
+}
+
+#main-header .et_mobile_menu .visible>ul.sub-menu {
+    display: block !important;
+    visibility: visible !important;
+}
+
+
+/* CSS refermer les sous-menus sur mobile */
+
+#main-header .et_mobile_menu .menu-item-has-children>a {
+    background-color: transparent;
+    position: relative;
+}
+
+#main-header .et_mobile_menu .menu-item-has-children>a:after {
+    font-family: 'ETmodules';
+    text-align: center;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+}
+
+#main-header .et_mobile_menu .menu-item-has-children>a:after {
+    font-size: 16px;
+    content: '\4c';
+    top: 13px;
+    right: 10px;
+}
+
+#main-header .et_mobile_menu .menu-item-has-children.visible>a:after {
+    content: '\4d';
+}
+
+#main-header .et_mobile_menu ul.sub-menu {
+    display: none !important;
+    visibility: hidden !important;
+    transition: all 1.5s ease-in-out;
+}
+
+#main-header .et_mobile_menu .visible>ul.sub-menu {
+    display: block !important;
+    visibility: visible !important;
+}
+
+
+/*----- Rendre le menu mobile sticky -----*/
+
+@media (max-width: 980px) {
+    .et_non_fixed_nav.et_transparent_nav #main-header,
+    .et_non_fixed_nav.et_transparent_nav #top-header,
+    .et_fixed_nav #main-header,
+    .et_fixed_nav #top-header {
+        position: fixed;
+    }
+}
+
+.et_mobile_menu {
+    overflow: scroll !important;
+    max-height: 83vh;
+}
+
+#CF5ec7a2fc0a938_1-row-5 {
+    width: 30%;
+    margin: 2% 33% 2% 33%;
+}
+
+#CF5ec7a2fc0a938_1-row-3 {
+    margin: 2% 0 2% 0;
+}
+
+#fld_4487002_1-wrap {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#fld_7388192_1-wrap {
+    width: 30%;
+    margin-left: 33%;
+    text-align: center;
+}
+
+#CF5ec7a2fc0a938_1-row-3 h4 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #585858;
+    text-align: center;
+}
+
+#fld_4487002_1 {
+    color: #FFF;
+    background-color: #ff3300;
+    border-radius: 5px;
+}
+
+.soulignement {
+    width: 25%;
+    color: red;
+    size: 4;
+    justify-content: center;
+}
+
+
+/* CSS refermer les sous-menus sur mobile */
+
+#main-header .et_mobile_menu .menu-item-has-children>a {
+    background-color: transparent;
+    position: relative;
+}
+
+#main-header .et_mobile_menu .menu-item-has-children>a:after {
+    font-family: 'ETmodules';
+    text-align: center;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+}
+
+#main-header .et_mobile_menu .menu-item-has-children>a:after {
+    font-size: 16px;
+    content: '\4c';
+    top: 13px;
+    right: 10px;
+}
+
+#main-header .et_mobile_menu .menu-item-has-children.visible>a:after {
+    content: '\4d';
+}
+
+#main-header .et_mobile_menu ul.sub-menu {
+    display: none !important;
+    visibility: hidden !important;
+    transition: all 1.5s ease-in-out;
+}
+
+#main-header .et_mobile_menu .visible>ul.sub-menu {
+    display: block !important;
+    visibility: visible !important;
+}
+
+#CF5ec7a2fc0a938_1-row-5 {
+    width: 30%;
+    margin: 2% 33% 2% 33%;
+}
+
+#CF5ec7a2fc0a938_1-row-3 {
+    margin: 2% 0 2% 0;
+}
+
+#fld_4487002_1-wrap {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#fld_7388192_1-wrap {
+    width: 30%;
+    margin-left: 33%;
+    text-align: center;
+}
+
+#CF5ec7a2fc0a938_1-row-3 h4 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #585858;
+    text-align: center;
+}
+
+#fld_4487002_1 {
+    color: #FFF;
+    background-color: #ff3300;
+    border-radius: 5px;
+}
+
+.soulignement {
+    width: 25%;
+    color: red;
+    size: 4;
+    justify-content: center;
+}
+
+.et_pb_toggle_open .et_pb_toggle_title:before {
+    display: block !important;
+    content: "\e04f";
+}
+
