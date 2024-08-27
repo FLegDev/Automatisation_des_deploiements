@@ -1,0 +1,27 @@
+name: Deploy WordPress Site
+
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Sync WordPress files to server
+        run: |
+          rsync -avz --delete --exclude='.git' ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/public_html/sideprojects/automated_deploy/wp-content/theme/Divi_theme_child
+
+      - name: Sync WordPress plugins to server
+        run: |
+          rsync -avz --delete --exclude='.git' ./wp-content/plugins/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/public_html/sideprojects/automated_deploy/wp-content/plugins
