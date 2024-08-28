@@ -18,10 +18,10 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Sync WordPress files to server
+      - name: Sync WordPress theme to server
         run: |
-          rsync -avz --delete --exclude='.git' ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/public_html/sideprojects/automated_deploy/wp-content/theme/Divi_theme_child
+          rsync -avz --delete --exclude='.git' ./wp-content/themes/Divi_theme_child/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/public_html/sideprojects/automated_deploy/wp-content/themes/Divi_theme_child/
 
       - name: Sync WordPress plugins to server
         run: |
-          rsync -avz --delete --exclude='.git' ./wp-content/plugins/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/public_html/sideprojects/automated_deploy/wp-content/plugins
+          rsync -avz --delete --exclude='.git' ./wp-content/plugins/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/public_html/sideprojects/automated_deploy/wp-content/plugins/
