@@ -1,6 +1,6 @@
 <?php
 
-class Your_Plugin_Name {
+class Your_Plugins_Name {
 
     public function __construct() {
         // Code d'initialisation du plugin
