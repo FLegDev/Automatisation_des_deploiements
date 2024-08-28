@@ -20,7 +20,7 @@ jobs:
 
       - name: Sync WordPress theme to server
         run: |
-          rsync -avz --delete --exclude='.git' ./wp-content/themes/Divi_theme_child/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/public_html/sideprojects/automated_deploy/wp-content/themes/
+          rsync -avz --delete --exclude='.git' ./wp-content/themes/Divi_theme_child/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/public_html/sideprojects/automated_deploy/wp-content/themes/Divi_theme_child/
 
       - name: Sync WordPress plugins to server
         run: |
